@@ -8,6 +8,7 @@ import Alert from './components/Alert'
 // import Login from './pages/Login'
 import Settings from './components/Settings'
 import WebcamComponent from './components/Webcamcomponet'
+import Report from './components/Report'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -33,10 +34,10 @@ function App() {
             <Alert />
           </>} />
 
-          {/* <Route path="/reports" element={<>
+          <Route path="/reports" element={<>
             <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />
             <Report/>
-          </>} /> */}
+          </>} />
 
           <Route path="/setting" element={<>
             <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />

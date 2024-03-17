@@ -38,7 +38,7 @@ const AlertStack = () => {
         setTimeout(() => {
             removeAlert(newAlert.id);
             setSnackbarOpen(false);
-        }, 6000);
+        }, 10000);
     };
 
     const removeAlert = (id) => {
@@ -62,12 +62,12 @@ const AlertStack = () => {
                 ))}
             </List>
             <Snackbar
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
                 open={snackbarOpen}
                 autoHideDuration={6000}
                 onClose={handleSnackbarClose}
             >
-                <MuiAlert onClose={handleSnackbarClose} severity="info" sx={{ width: '100%' }}>
+                <MuiAlert onClose={handleSnackbarClose} severity="error" sx={{ width: '100%' }}>
                     {snackbarMessages.join('\n')}
                 </MuiAlert>
             </Snackbar>

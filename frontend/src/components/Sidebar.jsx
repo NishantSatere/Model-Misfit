@@ -45,11 +45,11 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                     <BsExclamationCircleFill className='icon'/> Alerts
                 </a>
             </li>
-            <li className='sidebar-list-item'>
-                <a href="#">
+            {/* <li className='sidebar-list-item'>
+                <a href="/reports">
                     <BsFillArchiveFill className='icon'/> Reports
                 </a>
-            </li>
+            </li> */}
             <li className='sidebar-list-item'>
                 <a href="/setting">
                     <TbSettingsFilled className='icon'/> Settings
@@ -60,11 +60,11 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                     <BsFillCameraVideoFill className='icon'/> Live Camera
                 </a>
             </li>
-             <li className='sidebar-list-item'>
+             {/* <li className='sidebar-list-item'>
                 <a href="/Video">
                     <BsFillArchiveFill className='icon'/> Recorded Videos
                 </a>
-            </li>
+            </li> */}
         </ul>
         <div className="risk-score-wrapper">
             <RiskScore />

@@ -3,6 +3,8 @@ import { LineChart, Line, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, L
 import { BsHandThumbsUp, BsHandThumbsDown, BsFire } from 'react-icons/bs';
 import { GrThreats } from 'react-icons/gr';
 import axios from 'axios';
+import AlertStack from './Alert.js'; // Import AlertStack component
+
 
 function Home() {
     const [incidentsData, setIncidentsData] = useState([]);
@@ -47,28 +49,28 @@ function Home() {
                         <h3>RECOGNIZED IND</h3>
                         <BsHandThumbsUp className='card_icon'/>
                     </div>
-                    <h1>100</h1>
+                    <h1>3</h1>
                 </div>
                 <div className='card'>
                     <div className='card-inner'>
                         <h3>UNRECOGNIZED IND</h3>
                         <BsHandThumbsDown className='card_icon'/>
                     </div>
-                    <h1>200</h1>
+                    <h1>15</h1>
                 </div>
                 <div className='card'>
                     <div className='card-inner'>
                         <h3>WEAPONS</h3>
                         <GrThreats className='card_icon'/>
                     </div>
-                    <h1>33</h1>
+                    <h1>6</h1>
                 </div>
                 <div className='card'>
                     <div className='card-inner'>
                         <h3>FIRE</h3>
                         <BsFire className='card_icon'/>
                     </div>
-                    <h1>150</h1>
+                    <h1>8</h1>
                 </div>
             </div>
 
@@ -101,6 +103,8 @@ function Home() {
                     </BarChart>
                 </ResponsiveContainer>
             </div>
+            {/* <AlertStack /> */}
+
         </main>
     );
 }

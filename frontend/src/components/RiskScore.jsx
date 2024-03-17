@@ -10,7 +10,7 @@ const RiskScore = () => {
       try {
         // Simulating API call to get anomaly count
         // Replace this with your actual API call
-        const fetchedCount = Math.floor(Math.random() * 100); // Random number for demonstration
+        const fetchedCount = Math.floor(Math.random() * 60); // Random number for demonstration
         setAnomalyCount(fetchedCount);
       } catch (error) {
         console.error('Error fetching anomaly count:', error);
