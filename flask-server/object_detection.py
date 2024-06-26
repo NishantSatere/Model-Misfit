@@ -360,6 +360,7 @@ def send_sms_notification(body: str, to: str):
         cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
         frame_count = 0
         email_sent = False
+        notification_sent = False
         while True:
             self.start_time = time()
             ret, im0 = cap.read()
@@ -386,8 +387,9 @@ def send_sms_notification(body: str, to: str):
                 if name == "Unknown":
                     unknown_persons += 1
 
-            if unknown_persons > 0 and not email_sent:
+            if unknown_persons > 0 and not email_sent and notification_sent:
                 self.send_email(unknown_persons)
+                self.send_sms_notification()
                 email_sent = True
             elif unknown_persons == 0:
                 email_sent = False
