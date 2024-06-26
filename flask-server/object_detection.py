@@ -249,6 +249,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import pymongo
 from datetime import datetime
+from twilio.rest import Client
 
 class ObjectDetection:
     def __init__(self, capture_index):
@@ -280,7 +281,12 @@ class ObjectDetection:
         self.server = smtplib.SMTP('smtp.gmail.com:587')
         self.server.starttls()
         self.server.login(self.from_email, self.password)
-    
+
+        # Twilio configuration
+        account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
+        auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
+
+        
 
     def insert_incident(self, incident_name, timestamp):
         # Create incident document
@@ -334,6 +340,18 @@ class ObjectDetection:
         message_body = f'ALERT - {object_detected} unknown person detected!!'
         message.attach(MIMEText(message_body, 'plain'))
         self.server.sendmail(self.from_email, self.to_email, message.as_string())
+   client = Client(account_sid, auth_token)
+
+def send_sms_notification(body: str, to: str):
+    try:
+        message = client.messages.create(
+            body=body,
+            from_="+15017122661",  # Replace with your Twilio phone number
+            to=to,
+        )
+        return {"status": "success", "message_sid": message.sid}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
 
     def __call__(self):
         cap = cv2.VideoCapture(self.capture_index)
