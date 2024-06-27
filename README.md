@@ -17,7 +17,7 @@ The Fire Detection model provides early warnings to prevent potential fire hazar
 
 - **Early Detection:** The system continuously monitors for signs of fire, such as smoke or elevated temperatures, and triggers alerts to prevent disasters.
 
-![Fire Detection Model](path/to/fire_detection_image.png)
+![Fire Detection Model](/FireDetection.jpeg)
 
 ### Weapon Detection
 The Weapon Detection model enhances safety by identifying weapons in the monitored area.
