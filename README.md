@@ -28,9 +28,12 @@ The Intrusion Detection model is designed to monitor and manage access to your p
 ![Intrusion Detection Model](/IntrutrusionDetection.jpeg)
 
 ### Fire Detection
+
 The Fire Detection model provides early warnings to prevent potential fire hazards.
 
 - **Early Detection:** The system continuously monitors for signs of fire, such as smoke or elevated temperatures, and triggers alerts to prevent disasters.
+
+![Fire Detection Model](/FireDetection.jpeg)
 
 ### Weapon Detection
 The Weapon Detection model enhances safety by identifying weapons in the monitored area.
