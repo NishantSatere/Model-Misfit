@@ -10,7 +10,7 @@ The Intrusion Detection model is designed to monitor and manage access to your p
 - **Authorized Access:** Easily add and manage individuals with authorized access, ensuring that only permitted personnel can enter.
 - **Unauthorized Access:** The system detects unauthorized access attempts and sends immediate notifications via SMS or email to alert security personnel.
 
-![Intrusion Detection Model](path/to/intrusion_detection_image.png)
+![Intrusion Detection Model](/IntrutrusionDetection.jpeg)
 
 ### Fire Detection
 The Fire Detection model provides early warnings to prevent potential fire hazards.
