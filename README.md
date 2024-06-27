@@ -8,9 +8,10 @@ The Sentinel Security System integrates advanced security models to ensure compr
 The Data-Driven Dashboard provides a comprehensive view of security data, enabling administrators to make informed decisions.
 
 - **Admin Analysis:** The dashboard offers detailed analytics and reports on security incidents, access logs, and system performance.
-- **Customizable Notifications:** Administrators can customize notification settings for each type of incident, ensuring relevant alerts are sent to the appropriate personnel.
-
 ![Data-Driven Dashboard](/Dashboard.jpeg)
+
+- **Customizable Notifications:** Administrators can customize notification settings for each type of incident, ensuring relevant alerts are sent to the appropriate personnel.
+![Data-Driven Dashboard](/Notifications.png)
 
 The Live Webcam Dashboard enables real-time monitoring of your premises.
 
@@ -45,6 +46,3 @@ The Violation Detection model enforces rules and policies within your premises.
 
 - **Rule Enforcement:** The system detects any rule violations, such as unauthorized entry, loitering, or restricted area breaches, and triggers appropriate alerts to security personnel.
 
-
-
-![Live Webcam Dashboard](path/to/live_webcam_dashboard_image.png)
