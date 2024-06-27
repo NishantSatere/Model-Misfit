@@ -1,7 +1,3 @@
-Sure! Here's a more detailed and expanded version of your README with comprehensive explanations for each feature, including placeholders for your image paths:
-
----
-
 # Sentinel Security System
 
 The Sentinel Security System integrates advanced security models to ensure comprehensive protection and real-time monitoring of your premises. Below is an overview of the implemented models and features:
@@ -58,7 +54,3 @@ The Live Webcam Dashboard enables real-time monitoring of your premises.
 - **Real-Time Monitoring:** This feature allows security personnel to view live feeds from all connected cameras, providing a real-time overview of the security status across your premises.
 
 ![Live Webcam Dashboard](path/to/live_webcam_dashboard_image.png)
-
----
-
-Replace `path/to/..._image.png` with the actual paths to your images. This detailed README will provide clear and comprehensive information about the Sentinel Security System for your GitHub repository.
